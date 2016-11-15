@@ -1,131 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html PUBLIC>
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>One Page Wonder - Gallery</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="gallery.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+<title>miniGallery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<link href="css/master.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+<!--[if IE 7]><link href="css/ie7-only.css" rel="stylesheet" type="text/css" media=screen><![endif]-->
+<!--[if lt IE 7]><link href="css/ie6-only.css" rel="stylesheet" type="text/css" media=screen><![endif]-->
+<script type="text/javascript" src="js/yetii-min.js"></script>
 </head>
-
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Full Width Image Header -->
-    <header class="header-image">
-        <div class="headline">
-            <div class="container">
-                <h1>One Page Wonder</h1>
-                <h2>Will Knock Your Socks Off</h2>
-            </div>
-        </div>
-    </header>
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <hr class="featurette-divider">
-
-        <!-- First Featurette -->
-        <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">This First Heading
-                <span class="text-muted">Will Catch Your Eye</span>
-            </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- Second Featurette -->
-        <div class="featurette" id="services">
-            <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">The Second Heading
-                <span class="text-muted">Is Pretty Cool Too.</span>
-            </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- Third Featurette -->
-        <div class="featurette" id="contact">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">The Third Heading
-                <span class="text-muted">Will Seal the Deal.</span>
-            </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
-
+<div class="container header">
+  <h1>Knockout Photography's miniGallery</h1>
+  <h3>An extremely lightweight and flexible gallery example.</h3>
+</div>
+<div class="container content">
+  <div id="tab-container-1">
+    <div class="span-13">
+      <div class="tab" id="tab1"> <a href="javascript:tabber1.next()" title="Click to view next image"><img src="images/fullsize/Agave.jpg" alt="" /></a>
+        <p class="info"> <strong>Agave</strong> Apple OSX Background </p>
+      </div>
+      <div class="tab" id="tab2"> <a href="javascript:tabber1.next()" title="Click to view next image"><img src="images/fullsize/Clown Fish.jpg" alt="" /></a>
+        <p class="info"> <strong>Clown Fish</strong> Apple OSX Background. </p>
+      </div>
+      <div class="tab" id="tab3"> <a href="javascript:tabber1.next()" title="Click to view next image"><img src="images/fullsize/Daisies.jpg" alt="" /></a>
+        <p class="info"> <strong>Daisies</strong> Apple OSX Background </p>
+      </div>
+      <div class="tab" id="tab4"> <a href="javascript:tabber1.next()" title="Click to view next image"><img src="images/fullsize/Dandelion Seeds.jpg" alt="" /></a>
+        <p class="info"> <strong>Dandelion Seeds</strong> Apple OSX Background </p>
+      </div>
+      <div class="tab" id="tab5"> <a href="javascript:tabber1.next()" title="Click to view next image"><img src="images/fullsize/Dew Drop.jpg" alt="" /></a>
+        <p class="info"> <strong>Dew Drop</strong> Apple OSX Background </p>
+      </div>
+      <div class="tab" id="tab6"> <a href="javascript:tabber1.next()" title="Click to view next image"><img src="images/fullsize/Flowing Rock.jpg" alt="" /></a>
+        <p class="info"> <strong>Flowing Rock</strong> Apple OSX Background </p>
+      </div>
+      <div class="tab" id="tab7"> <a href="javascript:tabber1.next()" title="Click to view next image"><img src="images/fullsize/Ladybug.jpg" alt="" /></a>
+        <p class="info"> <strong>Ladybug</strong> Apple OSX Background </p>
+      </div>
+      <div class="tab" id="tab8"> <a href="javascript:tabber1.next()" title="Click to view next image"><img src="images/fullsize/Leaf Curl.jpg" alt="" /></a>
+        <p class="info"> <strong>Leaf Curl</strong> Apple OSX Background </p>
+      </div>
+      <div class="tab" id="tab9"> <a href="javascript:tabber1.next()" title="Click to view next image"><img src="images/fullsize/Lotus.jpg" alt="" /></a>
+        <p class="info"> <strong>Lotus</strong> Apple OSX Background </p>
+      </div>
+      <div class="tab" id="tab10"> <a href="javascript:tabber1.next()" title="Click to view next image"><img src="images/fullsize/Petals.jpg" alt="" /></a>
+        <p class="info"> <strong>Petals</strong> Apple OSX Background </p>
+      </div>
     </div>
-    <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
+    <div class="span-5">
+      <ul id="tab-container-1-nav">
+        <li><a href="#tab1"><img src="images/thumbs/Agave.jpg" alt="" /></a></li>
+        <li><a href="#tab2"><img src="images/thumbs/Clown Fish.jpg" alt="" /></a></li>
+        <li><a href="#tab3"><img src="images/thumbs/Daisies.jpg" alt="" /></a></li>
+        <li><a href="#tab4"><img src="images/thumbs/Dandelion Seeds.jpg" alt="" /></a></li>
+        <li><a href="#tab5"><img src="images/thumbs/Dew Drop.jpg" alt="" /></a></li>
+        <li><a href="#tab6"><img src="images/thumbs/Flowing Rock.jpg" alt="" /></a></li>
+        <li><a href="#tab7"><img src="images/thumbs/LadyBug.jpg" alt="" /></a></li>
+        <li><a href="#tab8"><img src="images/thumbs/Leaf Curl.jpg" alt="" /></a></li>
+        <li><a href="#tab9"><img src="images/thumbs/Lotus.jpg" alt="" /></a></li>
+        <li><a href="#tab10"><img src="images/thumbs/Petals.jpg" alt="" /></a></li>
+      </ul>
+    </div>
+    <div class="span-5 last">
+      <h2>miniGallery</h2>
+      <p>From California to Maryland, and currently Okinawa, Japan.</p>
+      <p>Have camera, will travel...</p>
+    </div>
+  </div>
+</div>
+<div class="container footer">
+  <p class="credit">miniGallery template designed by: <a href="http://www.jigowattpremiumtemplates.co.uk">K.Owen</a></p>
+  <p>The images used in this example are desktop backgrounds in Apple OSX.</p>
+</div>
+<script type="text/javascript">
+var tabber1 = new Yetii({
+id: 'tab-container-1'
+});
+</script>
 </body>
-
 </html>
