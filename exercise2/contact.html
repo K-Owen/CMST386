@@ -8,7 +8,16 @@
 </head>
 
 <body>
-
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="https://k-owen.github.io/cmst386/">Homepage</a></li>
+        <li><a href="https://k-owen.github.io/cmst386/exercise1/gallery.html">Page 1: Gallery</a></li>
+        <li><a href="https://k-owen.github.io/cmst386/exercise2/contact.html">Page 2: Contact Me</a></li>
+        <li><a href="https://k-owen.github.io/cmst386/exercise3/temperatures.html">Page 3: Temperatures</a></li>
+      </ul>
+    </div>
+  </nav>
 	<header class="body">
         <h1>Get in Touch</h1>
     </header>
@@ -16,14 +25,36 @@
     <section class="body">
         <form method="post" action="contact.php">
             <label>Name*</label>
-            <input name="name" placeholder="Type Here">
+              <input name="name" placeholder="Type Here">
             <label>Email*</label>
-            <input name="email" type="email" placeholder="Type Here">
+              <input name="email" type="email" placeholder="Type Here">
+            <label>Address</label>
+              <input name="address" placeholder="1234 Residence Avenue, FPO AP, 1234">
+            <label>Home Phone</label>
+              <input name="home" placeholder="(123)456-7890">
+            <label>Cell Phone</label>
+              <input name="cell" placeholder="(987)654-3210">
             <label>Message</label>
-            <textarea name="message" placeholder="Type Here"></textarea>
+              <textarea name="message" placeholder="Type Here"></textarea><br>
+            <label>Gender</label>
+              <input type="radio" name="gender" value="male"> Male
+              <input type="radio" name="gender" value="female"> Female<br>
+            <label>Status</label>
+              <input type="checkbox" value="Employed" /> Employed
+              <input type="checkbox" value="Student" /> Student
+              <input type="checkbox" value="Retired" /> Retired
+              <input type="checkbox" value="Homemaker" /> Homemaker<br>
+            <label>Age Range</label>
+              <select>
+                <option value="volvo">Under 13</option>
+                <option value="saab">13-19</option>
+                <option value="opel">20-39</option>
+                <option value="opel">40-59</option>
+                <option value="audi">60 and older</option>
+              </select>
             <label>*What is 2+2? (Anti-spam)</label>
-            <input name="human" placeholder="Type Here">
-            <input id="submit" name="submit" type="submit" value="Submit">
+              <input name="human" placeholder="Type Here">
+              <input id="submit" name="submit" type="submit" value="Submit">
         </form>
     </section>
 
