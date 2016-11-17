@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="temperatures.css">
+
+
+<title>Fahrenheit to Celsius conversion (°F to °C)</title>
+<meta name="description" content="Fahrenheit to Celsius (°F to °C) conversion calculator and how to convert.">
+<style>
+	.calc2 textarea { width:220px; font-size:large; }
+@media all and (max-width: 576px) {
+	.calc2 { width:100%; }
+	.calc2 input[type=text], .calc2 input[type=number] { width: 100%; padding:5px; }
+	.calc2 textarea { width:100%; }
+	.calc2 tr td:nth-child(2) {
+		width: 240px;
+		width: calc(100% - 30px);
+	}
+}
+.ntable td:nth-child(1), .ntable td:nth-child(2) { width:90px }
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+
+	<h1>Fahrenheit to Celsius conversion</h1>
+	<p><a href="fahrenheit.htm">Fahrenheit (°F)</a> to <a href="celsius.htm">Celsius (°C)</a> degrees conversion calculator and how to convert.</p>
+	<ul>
+		<li><a href="#calculator">Fahrenheit to Celsius conversion calculator</a></li>
+		<li><a href="#how">How to convert Fahrenheit to Celsius</a></li>
+		<li><a href="#table">Fahrenheit to Celsius conversion table</a></li>
+	</ul>
+	<h2><a id="calculator"></a>Fahrenheit to Celsius conversion calculator</h2>
+	<p>Enter the temperature in degrees Fahrenheit and press the <i>Convert</i> button:</p>
+
+	<form name="calcform">
+	<table class="calc2">
+	  <tr>
+		<td><label for="x">Fahrenheit:</label></td>
+		<td><input type="number" id="x" name="x" class="intext" tabindex="1"></td>
+	    <td class="mathsymbol">°F</td>
+	  </tr>
+	  <tr>
+		<td>&nbsp;</td>
+	  	<td>
+			<button type="button" title="Convert" class="btn" tabindex="2" onclick="calc()"><img src="/lib/icons/glyphicons_all/glyphicons_halflings/glyphicons_halflings_030_refresh.png" alt=""> Convert</button>
+			<button type="reset" title="Reset" class="btn" tabindex="3"><img src="/lib/icons/glyphicons_all/glyphicons_halflings/glyphicons_halflings_013_remove.png" alt=""> Reset</button>
+	  	</td>
+	    <td>&nbsp;</td>
+	  </tr>
+	  <tr>
+		<td>Celsius:</td>
+		<td><input type="text" name="y" class="outtext" readonly tabindex="4"></td>
+	    <td class="mathsymbol">°C</td>
+	  </tr>
+	  <tr id="pf1">
+		<td>Calculation:</td>
+		<td><textarea name="TA" rows="3" class="outtext" readonly></textarea></td>
+		<td>&nbsp;</td>
+	  </tr>
+	</table>
+	</form>
+
+	<p><a href="celsius-to-fahrenheit.htm">Celsius to Fahrenheit &#9658;</a></p>
+	<h2><a id="how"></a>How to convert Fahrenheit to Celsius</h2>
+	<p>0 degrees Fahrenheit is equal to -17.77778 degrees Celsius:</p>
+	<p class="math">0 °F = -17.77778 °C</p>
+	<p>The temperature <i>T</i> in degrees Celsius (°C) is equal to the temperature <i>T</i> in degrees Fahrenheit (°F) minus 32, times 5/9:</p>
+	<p class="math"><i>T</i><sub>(°C)</sub> = (<i>T</i><sub>(°F)</sub> - 32) &times; 5/9</p>
+	<p>or</p>
+	<p class="math"><i>T</i><sub>(°C)</sub> = (<i>T</i><sub>(°F)</sub> - 32) / (9/5)</p>
+	<p>or</p>
+	<p class="math"><i>T</i><sub>(°C)</sub> = (<i>T</i><sub>(°F)</sub> - 32) / 1.8</p>
+	<h4>Example</h4>
+	<p>Convert 68 degrees Fahrenheit to degrees Celsius:</p>
+	<p class="math"><i>T</i><sub>(°C)</sub> = (68°F - 32) &times; 5/9 = 20 °C</p>
+	<h2><a id="table"></a>Fahrenheit to Celsius conversion table</h2>
+	<table class="ntable">
+		<thead>
+		<tr>
+			<th><a href="fahrenheit.htm">Fahrenheit (°F)</a></th>
+			<th><a href="celsius.htm">Celsius (°C)</a></th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>-459.67 °F</td>
+			<td>-273.15 °C</td>
+			<td style="text-align:left">absolute zero temperature</td>
+		</tr>
+		<tr>
+			<td>-50 °F</td>
+			<td>-45.56 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>-40 °F</td>
+			<td>-40.00 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>-30 °F</td>
+			<td>-34.44 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>-20 °F</td>
+			<td>-28.89 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>-10 °F</td>
+			<td>-23.33 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>0 °F</td>
+			<td>-17.78 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>10 °F</td>
+			<td>-12.22 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>20 °F</td>
+			<td>-6.67 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>30 °F</td>
+			<td>-1.11 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="background:#f8f8f8;">32 °F</td>
+			<td style="background:#f8f8f8;">0 °C</td>
+			<td style="background:#f8f8f8; text-align:left">freezing/melting point&nbsp;of water</td>
+		</tr>
+		<tr>
+			<td>40 °F</td>
+			<td>4.44 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>50 °F</td>
+			<td>10.00 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>60 °F</td>
+			<td>15.56 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>70 °F</td>
+			<td>21.11 °C</td>
+			<td style="text-align:left">room temperature</td>
+		</tr>
+		<tr>
+			<td>80 °F</td>
+			<td>26.67 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>90 °F</td>
+			<td>32.22 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>98.6 °F</td>
+			<td>37 °C</td>
+			<td style="text-align:left">average body temperature</td>
+		</tr>
+		<tr>
+			<td>100 °F</td>
+			<td>37.78 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>110 °F</td>
+			<td>43.33 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>120 °F</td>
+			<td>48.89 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>130 °F</td>
+			<td>54.44 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>140 °F</td>
+			<td>60.00 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>150 °F</td>
+			<td>65.56 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>160 °F</td>
+			<td>71.11 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>170 °F</td>
+			<td>76.67 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>180 °F</td>
+			<td>82.22 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>190 °F</td>
+			<td>87.78 °C</td>
+			<td>&nbsp;</td>
+			</tr>
+		<tr>
+			<td>200 °F</td>
+			<td>93.33 °C</td>
+			<td>&nbsp;</td>
+			</tr>
+		<tr>
+			<td>212 °F</td>
+			<td>100 °C</td>
+			<td style="text-align:left">boiling point of water</td>
+			</tr>
+		<tr>
+			<td>300 °F</td>
+			<td>148.89 °C</td>
+			<td>&nbsp;</td>
+			</tr>
+		<tr>
+			<td>400 °F</td>
+			<td>204.44 °C</td>
+			<td>&nbsp;</td>
+			</tr>
+		<tr>
+			<td>500 °F</td>
+			<td>260.00 °C</td>
+			<td>&nbsp;</td>
+			</tr>
+		<tr>
+			<td>600 °F</td>
+			<td>315.56 °C</td>
+			<td>&nbsp;</td>
+			</tr>
+		<tr>
+			<td>700 °F</td>
+			<td>371.11 °C</td>
+			<td>&nbsp;</td>
+			</tr>
+		<tr>
+			<td>800 °F</td>
+			<td>426.67 °C</td>
+			<td>&nbsp;</td>
+			</tr>
+		<tr>
+			<td>900 °F</td>
+			<td>482.22 °C</td>
+			<td>&nbsp;</td>
+			</tr>
+		<tr>
+			<td>1000 °F</td>
+			<td>537.78 °C</td>
+			<td>&nbsp;</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+	<script type="text/javascript" src="../temperatures.js"></script>
+	<script type="text/javascript">
+		<!--
+		function convert(x) {
+			var y = (parseFloat(x)-32.0)*5.0/9.0;
+			var yy=roundresult(y);
+			var txt="("+x+"\u00B0F-32)\u00D75/9\n";
+			txt+="= "+yy+"\u00B0C";
+			document.calcform.TA.value = txt;
+		 	return (y);
+		}
+		//-->
+	</script>
+	<!-- #EndEditable -->
+</aside>
+
+<footer id="footer">
+	<a href="../index.html">Home</a>
+	</p>
+</footer>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>
