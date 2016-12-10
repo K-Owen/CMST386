@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta charset="UTF-8">
+ <meta name="description" content="A simple website sample for casino chip counting created with HTML5, CSS, and a bit of Javascript. ">
+ <meta name="keywords" content="simple, sample, website, HTML5, CSS, Javascript, JS, casino, 'chip counting'">
+
+  <title>Exercise 4: Casino Counting Chip Program</title>
+<link type="text/css" rel="stylesheet" href="casino.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="https://k-owen.github.io/cmst386/">Homepage</a></li>
+        <li><a href="https://k-owen.github.io/cmst386/exercise1/gallery.html">Page 1: Gallery</a></li>
+        <li><a href="https://k-owen.github.io/cmst386/exercise2/contact.html">Page 2: Contact Me</a></li>
+        <li><a href="https://k-owen.github.io/cmst386/exercise3/temperatures.html">Page 3: Temperatures</a></li>
+        <li><a href="https://k-owen.github.io/cmst386/exercise4/casino.html">Page 4: Casino</a></li>
+      </ul>
+    </div>
+  </nav>
+  <object width="300" height="42">
+  <param name="src" value="DBZKaiCareBreak.mp3">
+  <param name="autoplay" value="false">
+  <param name="controller" value="true">
+  <param name="bgcolor" value="#FFFFFF">
+</embed>
+</object>
+</div>
+
+<p class="text">Welcome to The Dynasty Casino. <br> Let's see how lucky you were today!</p>
+
+  <main id="container">
+
+    <section id="casino">
+      <h4>Cash Out</h4>
+
+      <form name="cashout" action>
+
+        <div id="personal">
+        <h5>Personal Info:</h5>
+        Last Name:
+        <input type="text" name="lastname" id="last" size="15" tabindex="1"><br><br>
+        First Name:
+        <input type="text" name="firstname" id="first" onchange="namedisplay();"  size="15" tabindex="2"><br><br>
+        Full Name:
+        <input type="text" readonly name="fullname" id="full"  size="30"><br><br>
+        Are You a U.S. Citizen?<br>
+        <input type="radio" name="US" id="y" onchange="citizen();" tabindex="3"> Yes<br>
+        Enter Your SSN:
+        <input type="password" name="social" id="snumber" disabled maxlength="9" placeholder="123456789" size="9"  size="11"><br>
+        <input type="radio" name="US" id="n" onchange="citizen();" tabindex="4"> No<br><br>
+
+        Enter Current Address:<br>
+        <input type="text" name="residence" id="address"  size="30" tabindex="5"><br><br>
+
+        Enter Your Email:<br>
+        <input type="email" name="mail" id="email" placeholder="example@place.com"  size="30" tabindex="6"><br><br>
+
+        Enter Your Phone Number:
+        <input type="tel" name="telephone" id="phone" maxlength="20" size="20" tabindex="7"><br>
+        <input type="checkbox" name="cellular" id="cell" tabindex="8"> This is a Cell Phone Number<br><br>
+      </div>
+
+      <div id="financial">
+
+        <h5>Balance:</h5>
+
+        <br>Starting Balance:<br>
+        <input type="number" name="initial" id="start" tabindex="9"  size="6">
+
+        <h6>Chips Remaining:</h6>
+        <table onchange="balance(); taxed(); winnings();">
+        <tr>
+          <th>Chip Color</th>
+          <th>Chip Value (USD)</th>
+          <th>Chip Quantity</th>
+        </tr>
+        <tr>
+        <td>Black</td>
+        <td><input type="number" name="worth" value="5" readonly   size="4"></td>
+        <td><input type="number" name="chips" id="black" tabindex="10"  size="6"></td>
+        </tr>
+        <tr>
+        <td>Blue</td>
+        <td><input type="number" name="worth" value="20" readonly  size="4"></td>
+        <td><input type="number" name="chips" id="blue" tabindex="11"  size="6"></td>
+        </tr>
+        <tr>
+        <td>Red</td>
+        <td><input type="number" name="worth" value="50" readonly  size="4"></td>
+        <td><input type="number" name="chips" id="red" tabindex="12"  size="6"></td>
+        </tr>
+        <tr>
+        <td>Green</td>
+        <td><input type="number" name="worth" value="100" readonly  size="4"></td>
+        <td><input type="number" name="chips" id="green" tabindex="13"  size="6"></td>
+        </tr>
+        <tr>
+        <td>Purple</td>
+        <td><input type="number" name="worth" value="500" readonly  size="4"></td>
+        <td><input type="number" name="chips" id="purle" tabindex="14"  size="6"></td>
+        </tr>
+        <tr>
+        <td>Gold</td>
+        <td><input type="number" name="worth" value="1000" readonly  size="4"></td>
+        <td><input type="number" name="chips" id="gold" tabindex="15"  size="6"></td>
+        </tr>
+        </table>
+        <h6>Net Balance:</h6>
+
+        Balance:<br>
+        <input type="number" readonly name="winnings" id="balance" size="10"><br>
+
+        <input type="checkbox" name="taxed" id="tax" disabled> 10% tax applied<br><br>
+
+        <strong>Net Balance:</strong><br>
+        <input type="number" readonly name="endingbalance" id="net" size="10"><br><br>
+
+        <input type="submit" value="Print Receipt" name="print" id="receipt" onclick="pop();">
+        <input type="reset">
+      </div>
+      </form>
+    </section>
+
+  </main>
+
+  <p class="text">Thank's For Playing!</p>
+
+    <footer>
+      <p>&copy; K.Owen 2016</p>
+    </footer>
+
+</body>
+</html>
